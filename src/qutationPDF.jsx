@@ -1,6 +1,12 @@
 import { StyleSheet } from "@react-pdf/renderer";
 import React from "react";
 import { Document, Page, Text, View } from "@react-pdf/renderer";
+import { Font } from "@react-pdf/renderer";
+
+Font.register({
+  family: "Cairo",
+  src: "/public/Fonts/Cairo/static/Cairo-Regular.ttf", // ✅ public path, works on Netlify
+});
 
 // Enhanced PDF Styles with Creative Design
 const styles = StyleSheet.create({
@@ -15,7 +21,7 @@ const styles = StyleSheet.create({
 
   // Header Section
   headerSection: {
-    backgroundColor: "#1e3a8a", // Deep blue
+    backgroundColor: "#1e3a8a",
     padding: 25,
     marginBottom: 30,
     position: "relative",
