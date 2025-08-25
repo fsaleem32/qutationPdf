@@ -5,7 +5,7 @@ import { Font } from "@react-pdf/renderer";
 
 Font.register({
   family: "Cairo",
-  src: "/public/Fonts/Cairo/static/Cairo-Regular.ttf", // ✅ public path, works on Netlify
+  src: "/Fonts/Cairo/static/Cairo-Regular.ttf", // ✅ public path, works on Netlify
 });
 
 // Enhanced PDF Styles with Creative Design

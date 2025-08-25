@@ -92,7 +92,6 @@ const QuotationGenerator = () => {
   // PDF Document Component
 
   const handleDownload = async () => {
-    console.log("Generating PDF...", quotationData);
     // Generate PDF as Blob
     const blob = await pdf(
       <QuotationPDF
