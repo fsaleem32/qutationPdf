@@ -71,7 +71,7 @@ const QuotationGenerator = () => {
   };
 
   const calculateItemTotal = (item) => {
-    return item.unitPrice * item.qty * 1.15;
+    return item.unitPrice * item.qty;
   };
 
   const calculateTotals = () => {
